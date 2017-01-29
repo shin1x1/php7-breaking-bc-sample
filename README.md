@@ -1,5 +1,16 @@
 # php7-breaking-bc-sample
 
+## php -l
+
+```
+$ find ./src -name '*.php' | xargs php -l
+PHP Fatal error:  Redefinition of parameter $name in ./src/Foo.php on line 19
+
+Fatal error: Redefinition of parameter $name in ./src/Foo.php on line 19
+
+Errors parsing ./src/Foo.php
+```
+
 ## php7cc
 
 ```
